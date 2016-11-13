@@ -3,11 +3,11 @@
 
 composite = ENV['VAGRANT_COMPOSITE'] || "minimal"
 
-name = ENV['VAGRANT_NAME'] || "devopssquare-cl-2016"
+name = ENV['VAGRANT_NAME'] || "devopssquare-cl-2016-demo"
 # Memory settings for "minimal" environment
 memory = ENV['VAGRANT_MEMORY'] || 2048
-ip_unique = ENV['VAGRANT_IP_UNIQUE'] || "48"
-port_unique = ENV['VAGRANT_PORT_UNIQUE'] || "48"
+ip_unique = ENV['VAGRANT_IP_UNIQUE'] || "49"
+port_unique = ENV['VAGRANT_PORT_UNIQUE'] || "49"
 box = ENV['VAGRANT_BOX'] || "bento/ubuntu-16.04"
 
 Vagrant.configure("2") do |boxname|
