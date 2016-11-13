@@ -1,0 +1,8 @@
+.idea/
+.vagrant/
+*.iml
+*.log
+*~
+cache/apt-archives/*.deb
+cache/apt-archives/lock
+cache/apt-archives/partial
