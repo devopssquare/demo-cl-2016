@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+    <mirrors>
+        <mirror>
+            <id>localhost</id>
+            <url>http://localhost:8081/nexus/content/groups/public</url>
+            <mirrorOf>*</mirrorOf>
+        </mirror>
+    </mirrors>
+
+    <activeProfiles>
+        <activeProfile>localhost</activeProfile>
+    </activeProfiles>
+
+    <profiles>
+        <profile>
+            <id>localhost</id>
+            <repositories>
+                <repository>
+                    <id>localhost-snapshots</id>
+                    <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+                <repository>
+                    <id>localhost-releases</id>
+                    <url>http://localhost:8081/nexus/content/repositories/releases</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                </repository>
+            </repositories>
+            <pluginRepositories>
+                <pluginRepository>
+                    <id>snapshots</id>
+                    <url>http://localhost:8081/nexus/content/group/public</url>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
+
+    <servers>
+        <server>
+            <id>localhost</id>
+            <username>deployment</username>
+            <password>deployment123</password>
+        </server>
+    </servers>
+</settings>
