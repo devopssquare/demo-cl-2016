@@ -1,0 +1,7 @@
+base
+jenkins-native
+data
+docker
+nexus
+jenkins-settings-nexus-localhost
+it-jenkins-nexus-minimal
